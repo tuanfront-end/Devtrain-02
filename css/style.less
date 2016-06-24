@@ -629,23 +629,33 @@ img.line-2{
 
 .title-2{
 	font-size: 30px;
-	font-weight: lighter;
+	font-weight: lighter; 
 	text-transform: uppercase;
 }
-.single_item{
 
+
+.grid{
+	margin-left: -15px;
+}
+
+.grid-item{
+	margin-left: 15px;
+	margin-bottom: 15px;
+	float: left;
+	width: 270px;
+}
+.father{
+	width: 100%;
+	position: relative;
 	overflow: hidden;
 	text-align: center;
-	width: 100%;
 	transition: all 0.5s;
 	img{
-		width: 100%;
-		margin-bottom: 15px;
+		max-width: 100%;
 	}
-	.portfolio-inner{
+	.portfolio-inner{ 
 		text-align: center;
-		width: 90%;
-		height: 94%;
+		width: 100%;
 		margin: 0 auto;
 		position: absolute;
 		top:0;
@@ -699,9 +709,9 @@ img.line-2{
 		}
 		
 	}
-
-
 }
+
+
 .just-section{
 	padding: 60px 0 60px 0;
 	background-color: #515f67;
@@ -860,7 +870,6 @@ img.line-2{
 	}
 }
 
-
 /* Medium devices (desktops, 992px and down) *//////////////////////////////////////////////////////////////
 /* Medium devices (desktops, 992px and down) *//////////////////////////////////////////////////////////////
 /* Medium devices (desktops, 992px and down) *//////////////////////////////////////////////////////////////
@@ -981,7 +990,7 @@ img.line-2{
 		position: static;
 	}
 	.portfolio-2-title{
-		height: 90px;
+		height: 170px;
 	}
 	.logo-nav-2{
 		float: inherit !important;
@@ -989,7 +998,7 @@ img.line-2{
 	.footer-2{
 		ul{
 			li{
-				margin: 0 auto;
+				margin-left: 14px;
 			}
 		}
 	}
@@ -1004,4 +1013,30 @@ img.line-2{
 			line-height: normal; 
 		}
 	}
+	.grid{
+		margin: 0 auto;
+		.grid-item{
+			width: 50%;
+			margin: 0 auto;
+			img{
+				width: 100%;
+			}
+		
+		}
+	}
+	.contact-2 input{
+		width: 100% !important;
+	}
+
+	.btn-2,{
+		width: 50% !important;
+	}
+	.btn-2-2{
+		width: 100% !important;
+	}
+
+}
+
+.clear {
+	clear: both; 
 }

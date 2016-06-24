@@ -24,8 +24,8 @@
       //----------------------------------------------------------------------
       // external js: isotope.pkgd.js
 
-        $(".portfolio_items").isotope({
-           itemSelector: '.single_item',
+        $(".grid").isotope({
+           itemSelector: '.grid-item',
            layoutMode: 'fitRows',
         });
 
@@ -36,7 +36,7 @@
           $(this).addClass('active');
 
           var selector =$(this).attr('data-filter');
-          $(".portfolio_items").isotope({
+          $(".grid").isotope({
             filter: selector,
             animationOption: {
               duration: 750,
@@ -46,6 +46,9 @@
           });
             return false;
         });
+
+        // external js: isotope.pkgd.js
+
 
       //- END ISOTOPE---------------------------------------------------------------------
      

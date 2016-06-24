@@ -545,20 +545,28 @@ img.line-2 {
   font-weight: lighter;
   text-transform: uppercase;
 }
-.single_item {
+.grid {
+  margin-left: -15px;
+}
+.grid-item {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  float: left;
+  width: 270px;
+}
+.father {
+  width: 100%;
+  position: relative;
   overflow: hidden;
   text-align: center;
-  width: 100%;
   transition: all 0.5s;
 }
-.single_item img {
-  width: 100%;
-  margin-bottom: 15px;
+.father img {
+  max-width: 100%;
 }
-.single_item .portfolio-inner {
+.father .portfolio-inner {
   text-align: center;
-  width: 90%;
-  height: 94%;
+  width: 100%;
   margin: 0 auto;
   position: absolute;
   top: 0;
@@ -569,14 +577,14 @@ img.line-2 {
   opacity: 0;
   transition: all 0.5s;
 }
-.single_item .portfolio-inner:before {
+.father .portfolio-inner:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
   transition: all 0.5s;
 }
-.single_item .portfolio-inner:after {
+.father .portfolio-inner:after {
   content: '';
   position: absolute;
   margin: 0 auto;
@@ -588,22 +596,22 @@ img.line-2 {
   transition: all 0.5s;
   transform: scale(0.7, 0.7);
 }
-.single_item .portfolio-inner a {
+.father .portfolio-inner a {
   vertical-align: middle;
   display: inline-block;
   z-index: 3;
   transition: all 0.5s;
   transform: translateX(-150px);
 }
-.single_item:hover .portfolio-inner {
+.father:hover .portfolio-inner {
   transition: all 0.5s;
   opacity: 1;
 }
-.single_item:hover .portfolio-inner a {
+.father:hover .portfolio-inner a {
   transition: all 0.5s;
   transform: translateX(0px);
 }
-.single_item:hover .portfolio-inner:after {
+.father:hover .portfolio-inner:after {
   opacity: 0.8;
   z-index: -1;
   transition: all 0.5s;
@@ -898,13 +906,13 @@ img.line-2 {
     position: static;
   }
   .portfolio-2-title {
-    height: 90px;
+    height: 170px;
   }
   .logo-nav-2 {
     float: inherit !important;
   }
   .footer-2 ul li {
-    margin: 0 auto;
+    margin-left: 14px;
   }
   .slider-sub {
     position: absolute;
@@ -917,4 +925,26 @@ img.line-2 {
     font-size: 14px;
     line-height: normal;
   }
+  .grid {
+    margin: 0 auto;
+  }
+  .grid .grid-item {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .grid .grid-item img {
+    width: 100%;
+  }
+  .contact-2 input {
+    width: 100% !important;
+  }
+  .btn-2 {
+    width: 50% !important;
+  }
+  .btn-2-2 {
+    width: 100% !important;
+  }
+}
+.clear {
+  clear: both;
 }
