@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+.clear {
+  clear: both;
+}
 .z-index1 {
   z-index: 1 !important;
 }
@@ -944,7 +947,4 @@ img.line-2 {
   .btn-2-2 {
     width: 100% !important;
   }
-}
-.clear {
-  clear: both;
 }
